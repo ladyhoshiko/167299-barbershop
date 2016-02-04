@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
+<style>
+  body { background: url(img/beige-background.jpg); }
+</style>
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-
+       <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
      <header class="main-header">
       <div class="container">
-          <a href="#" class="logo"> <img src="http://placehold.it" width=200 height="40" alt="logo" /> </a>
+          <a href="#" class="logo"> <img src="img/logo-barbershop-item.png" width="111" height="24" alt="logo" /> </a>
         <nav class="main-navigation">
           <ul>
             <li>
@@ -45,19 +47,19 @@
     <form action="#">
       <fieldset>
         <legend>производители</legend>	 
-            <label><input type="checkbox" checked="checked"/></label> <p>BAXTER OF CALIFORNIA</p>
-           <label> <input type="checkbox" /> </label> <p>MA NATTY</p>
-           <label> <input type="checkbox" /> </label> <p>SUAVECITO</p>
-           <label> <input type="checkbox" /> </label> <p>MALIN+GOETZ</p>
-           <label> <input type="checkbox" checked="checked"/></label>  <p>AMERICAN CREW</p>
+           <label><input type="checkbox" checked="checked"/>BAXTER OF CALIFORNIA</label> 
+           <label> <input type="checkbox" />MA NATTY</label> 
+           <label> <input type="checkbox" />SUAVECITO</label> 
+           <label> <input type="checkbox" />MALIN+GOETZ</label> 
+           <label> <input type="checkbox" checked="checked"/>AMERICAN CREW</label>
       </fieldset>
     </div>
     <div class="features-item">
       <fieldset>
     <legend>ГРУППЫ ТОВАРОВ:</legend>
-    	   <label> <input type="checkbox" /></label><p><p>бритвенные <p/> принаддежности</p></p>
-         <label> <input type="checkbox" checked="checked"/></label><p>средства для ухода</p></p>
-         <label> <input type="checkbox" /></label>  <p> аксессуары </p>
+    	   <label> <input type="radio" name="group-items"/>бритвенные принаддежности</label>
+         <label> <input type="radio" name="group-items"/>средства для ухода</label>
+         <label> <input type="radio" name="group-items"/>аксессуары</label>
      </div>
      <p><input type="submit" value="ПОКАЗАТЬ"></p>
      </fieldset>
@@ -66,41 +68,47 @@
          
 <section class="products">        
     <div class="product">
-        <img class="product-img" src="/products/barbershop-shop.jpg" width="150" height="200" alt="Набор для путешествий">
+        <img class="product-img" src="img/item.jpg" width="220" height="165" alt="Набор для путешествий">
         <p>Набор для путешествий <br /> "Baxter of California"</p>
-    <div class="price"><span>2900 РУБ.</span>
-      </div>
-    <a class="add-to-cart"  href="#">Купить</a>
+    <div class="price-block">
+      <div class="price">2900 РУБ.</div>
+      <a href="#" class="add-to-cart">Купить</a>
+    </div>
     <div class="product">
-    	  <img class="product-img" src="/products/barbershop-shop.jpg" width="150" height="200" alt="Увлажняющий кондиционер">
+    	  <img class="product-img" src="img/item-2.jpg" width="220" height="165" alt="Увлажняющий кондиционер">
         <p>Увлажняющий кондиционер <br /> "Baxter of California"</p>
-    <div class="price"><span>750 РУБ.</span>
+   <div class="price-block">
+      <div class="price">750 РУБ.</div>
+      <a href="#" class="add-to-cart">Купить</a>
     </div>
-        <a class="add-to-cart"  href="#">Купить</a>
     <div class="product">
-    	  <img class="product-img" src="/products/barbershop-shop.jpg" width="150" height="200" alt="Гель для волос">
+    	  <img class="product-img" src="img/item-3.jpg" width="220" height="165" alt="Гель для волос">
         <p>Гель для волос <br /> "SUAVECITO"</p>
-    <div class="price"><span>290 РУБ.</span>
+       <div class="price-block">
+      <div class="price">290 РУБ.</div>
+      <a href="#" class="add-to-cart">Купить</a>
     </div>
-        <a class="add-to-cart"  href="#">Купить</a>
     <div class="product">
-    	 <img class="product-img" src="/products/barbershop-shop.jpg" width="150" height="200" alt="Глина для укладки волос">
+    	 <img class="product-img" src="img/item-4.jpg" width="220" height="165"alt="Глина для укладки волос">
        <p>Глина для укладки волос <br /> "AMERICAN CREW"</p>
-    <div class="price"><span>500 РУБ.</span>
+   <div class="price-block">
+      <div class="price">500 РУБ.</div>
+      <a href="#" class="add-to-cart">Купить</a>
     </div>
-       <a class="add-to-cart"  href="#">Купить</a>
     <div class="product">
-    	 <img class="product-img" src="/products/barbershop-shop.jpg" width="150" height="200" alt="Набор для путешествий">
+    	 <img class="product-img" src="img/item-5.jpg" width="220" height="165" alt="Набор для путешествий">
        <p>Гель для волос <br /> "AMERICAN CREW"</p>
-   <div class="price"><span>300 РУБ.</span>
-   </div>
-       <a class="add-to-cart"  href="#">Купить</a>
-   <div class="product">
-    	 <img class="product-img" src="/products/barbershop-shop.jpg" width="150" height="200" alt="Набор для бритья">
-       <p>Набор для бритья <br /> "Baxter of California"</p>
-    <div class="price"><span>3900 РУБ.</span>
+   <div class="price-block">
+      <div class="price">300 РУБ.</div>
+      <a href="#" class="add-to-cart">Купить</a>
     </div>
-       <a class="add-to-cart"  href="#">Купить</a>
+   <div class="product">
+    	 <img class="product-img" src="img/item-6.jpg" width="220" height="165" height="200" alt="Набор для бритья">
+       <p>Набор для бритья <br /> "Baxter of California"</p>
+   <div class="price-block">
+      <div class="price">390 РУБ.</div>
+      <a href="#" class="add-to-cart">Купить</a>
+    </div>
    </div>
   </section> 
    <div class="pagination">
